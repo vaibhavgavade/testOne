@@ -5,10 +5,17 @@ export default class FirstScreen extends Component {
   constructor(props) {
     super(props);
     this.state = {
+     
+
     };
+    
   }
 
+  
+
+ 
   render() {
+   
     return (
       <View style={Styles.Container}>
         <Text> FirstScreen</Text>
@@ -18,6 +25,7 @@ export default class FirstScreen extends Component {
         <TouchableOpacity onPress={()=>this.props.navigation.navigate('third')}>
             <Text>Go</Text>
         </TouchableOpacity>
+         
       </View>
     );
   }

@@ -7,10 +7,18 @@ import SecondScreen from './Screen/SecondScreen';
 import ThirdScreen from './Screen/ThirdScreen';
 const AppStack = createStackNavigator({
     one:{
-        screen:FirstScreen
+        screen:FirstScreen,
+        navigationOptions:{
+            headerBackTitle:null
+        }
     },
     two:{
-        screen:SecondScreen
+        screen:SecondScreen,
+        navigationOptions:{
+            headerTitle:'GOAL APP',
+            headerTintColor:'red'
+           
+        }
     },
     third:{
         screen:ThirdScreen
